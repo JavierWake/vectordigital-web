@@ -1,0 +1,18 @@
+.MuiButtonBase-root{
+    margin-left: 0% !important;
+}
+
+.MuiCardHeader-title{
+    text-align: center !important;
+    padding-left: 25px !important;
+}
+
+.MuiCardActions-root{
+    text-align: center !important;
+    margin-left: 28% !important;
+}
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+
+    color: #ff5000 !important;
+
+ }

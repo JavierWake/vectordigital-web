@@ -1,0 +1,14 @@
+.btn-secondary {
+    color: #888682 !important;
+    background-color: rgba(196, 196, 196, 0.1) !important;
+    border-color: rgba(196, 196, 196, 0.1) !important;
+    /* background-color: #DEDEDE !important;
+    border-color: #DEDEDE !important; */
+    margin: 4px;
+    border-radius: 40px !important;
+    /* opacity: 0.1 !important; */
+}
+
+#active, .btn-secondary:hover {
+    background-color: #DEDEDE !important;
+}

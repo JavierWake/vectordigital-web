@@ -1,0 +1,133 @@
+.MuiTableCell-head {
+  font-weight: bold !important;
+}
+
+#noInfoDiv {
+  min-height: 40rem !important;
+} 
+
+#maxTable {
+  max-height: 400rem !important;
+}
+
+.ForwardRef-root-2 {
+  height: 40px !important;
+}
+
+.MuiTableCell-root {
+  font-size: 0.75rem !important;
+  /* padding: none !important; */
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+  letter-spacing: normal !important;
+}
+
+.MuiTableCell-stickyHeader {
+  font-size: 0.75rem !important;
+  padding: 4px !important;
+}
+
+.MuiSvgIcon-root {
+  font-size: 0.99rem !important;
+}
+
+#emisoraName {
+  font-size: 0.610rem !important;
+}
+
+#titulos {
+  font-size: 0.610rem !important;
+}
+
+.tradingGray {
+  background-color: #F8F8F8 !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+}
+
+.tradingTitle {
+  color: #888682 !important;
+}
+
+/* .paperTable {
+  height: 39rem;
+} */
+
+
+.negativo_hot   {
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  width: 100%;
+  /* padding: 2px 0px 2px 2px; */
+  color: black;
+  -webkit-animation: NEGATIVO-HOT 0.75S ; /* Safari 4+ */
+  -moz-animation:    NEGATIVO-HOT 0.75S ; /* Fx 5+ */
+  -o-animation:      NEGATIVO-HOT 0.75S ; /* Opera 12+ */
+  animation:         NEGATIVO-HOT 0.75S ; /* IE 10+, Fx 29+ */
+  animation-timing-function: linear;
+  
+}
+
+@keyframes NEGATIVO-HOT {
+  0%, 49% {
+      border-radius: 3px;
+      background-color: #FBE5E5;
+      border-color: #D70000;
+      border-width: 1px;
+      color: black;
+  }
+}
+
+.negativo_cold  {
+  color: black;
+  border-width: 1px;
+  border-color: transparent;
+  width: 100%;
+  border-style: solid;
+}
+
+.positivo_hot   {
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  color: black;
+  -webkit-animation: POSITIVO-HOT 0.75S ; /* Safari 4+ */
+  -moz-animation:    POSITIVO-HOT 0.75S ; /* Fx 5+ */
+  -o-animation:      POSITIVO-HOT 0.75S ; /* Opera 12+ */
+  animation:         POSITIVO-HOT 0.75S ; /* IE 10+, Fx 29+ */
+  animation-timing-function: linear;
+  
+}
+
+@keyframes POSITIVO-HOT {
+  0%, 49%  {
+    border-radius: 3px;
+      background-color: #E5F7E5;
+      border-color: #04B700;
+      border-width: 1px;
+      color: black;
+  }
+}
+
+.positivo_cold  {
+  color: black;
+  border-width: 1px;
+  border-color: transparent;
+  width: 100%;
+  border-style: solid;
+}
+
+.cero_hot {  
+    /*color: white;  */
+    border: 1px; 
+    border-width: 1px;
+    border-color: transparent;
+    border-style: solid;
+}
+.cero_cold  {
+    border: 1px; 
+    border-width: 1px;
+    border-color: transparent;
+    border-style: solid;
+}

@@ -1,0 +1,15 @@
+.format{
+    font-weight: 700;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    line-height: 16.41px;
+}
+
+.redNumbers{
+    color: #D70000;
+}
+
+.greenNumbers{
+    color: #04B700;
+}

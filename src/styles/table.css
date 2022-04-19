@@ -1,0 +1,20 @@
+.MuiTableCell-head {
+  font-weight: bold !important;
+}
+
+.ForwardRef-root-2 {
+  height: 40px !important;
+}
+
+.MuiTableCell-root {
+  font-size: 0.875rem !important;
+}
+
+.MuiTableCell-stickyHeader {
+  font-size: 0.875rem !important;
+  padding: 13px !important;
+}
+
+tr.spaceUnder>td {
+  padding-bottom: 1em;
+}

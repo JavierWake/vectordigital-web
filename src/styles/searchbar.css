@@ -1,0 +1,48 @@
+
+/*.MuiInputBase-fullWidth {
+    width: 80% !important;
+}*/
+
+.MuiAutocomplete-root fieldset:hover{
+    border-color: #FF5000 !important;
+ }
+ .MuiAutocomplete-root:hover{
+    border-color: #FF5000 !important;
+ }
+
+.select:focus:not(:focus-visible) {
+  /* Remove the focus indicator on mouse-focus for browsers
+     that do support :focus-visible */
+  background: transparent !important;
+  display: none !important;
+}
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    outline-width: 0px;
+}
+.MuiInput-underline{
+    border-bottom: #FF5000 !important;
+}
+.MuiInput-underline:after {
+    border-bottom: #FF5000 !important;
+}
+::before{
+    border-bottom: #FF5000 !important;
+}
+.MuiFormLabel-root.Mui-focused{
+    color: #FF5000 !important;
+    margin: 4px;
+}
+.MuiInputBase-root{
+    margin-left: 0px !important;
+}
+/* .MuiInputBase-root{
+    width: 30% !important;
+}
+ */
+/* .MuiInputBase-input .MuiInput-input .MuiAutocomplete-input .MuiAutocomplete-inputFocused .MuiInputBase-inputAdornedEnd{
+    width: 30% !important;
+
+} */

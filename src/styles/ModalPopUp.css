@@ -1,0 +1,13 @@
+.size-modal{
+    width: 440px;
+    height: 166px;
+    border-radius: 5px;
+}
+
+.Titulo-modal{
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    justify-content: center;
+}
+

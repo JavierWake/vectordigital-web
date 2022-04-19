@@ -1,0 +1,10 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+input[type=checkbox].exampleB{
+    background-color: #001b43;
+}

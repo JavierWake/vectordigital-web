@@ -1,0 +1,58 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.btn-primary {
+  border-color: #F8F8F8 !important;
+
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.MuiAutocomplete-root {
+  /*  background-color: white !important; */
+  border-color: #F8F8F8 !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: #DFDFDF !important;
+}
+
+.MuiInputBase-root {
+  margin-left: 15px !important;
+  /*   padding-top: 3px !important; */
+  /* border-top-width: 5px !important; */
+  /*   padding-bottom: 3px !important; */
+  font-size: 70% !important;
+  background-color: white !important;
+}
+
+.MuiFilledInput-root {
+  background: white !important;
+  background-color: white !important;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+.dropdown-menu {
+  z-index: 20;
+}
+
+select#selectPositions {
+  background-color: #FF5000 !important;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+select option {
+  background-color: #FFFF !important;
+  color: black !important; 
+}
+
+select:focus{ outline: none;}

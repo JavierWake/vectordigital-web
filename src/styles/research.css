@@ -1,0 +1,42 @@
+.icon-verde{
+    color: #CEDE22;
+}
+.tag-verde{
+    color: #CEDE22;
+    background:rgba(206, 222, 34, 0.2);
+}
+.icon-naranja{
+    color: #FF5000;
+}
+.tag-naranja{
+    color: #FF5000;
+    background:rgba(255, 80, 0, 0.1);
+}
+.tag-azul-light{
+    color: #B2E3DE;
+    background:rgba(178, 227, 222, 0.3);
+}
+.icon-azul-light{
+    color: #B2E3DE;
+}
+
+.tag-azul{
+    color: #172A56;
+    background:rgba(23, 42, 86, 0.1)
+    ;
+}
+.icon-azul{
+    color: #172A56;
+}
+
+/* .tags-wrap>div:not(:first-child){
+    margin: 0 .5rem;
+} */
+
+.tags-wrap>a{
+    margin-bottom: 0.5rem;
+}
+
+.tags-wrap>a:not(:last-child){
+    margin-right: 0.5rem;
+}

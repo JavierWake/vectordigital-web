@@ -1,0 +1,38 @@
+.card-guia{
+    width: 20%;
+    position: relative;
+}
+/* .card-guia::after{
+    display: block;
+    content: "";
+    padding-bottom: 100%;
+} */
+.card-guia-wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.card-guia-foot p{
+    color: rgba(153, 153, 153, 1);
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+.card-guia-foot div p:first-child{
+    margin-right: 0.5rem;
+}
+
+.card-guia-foot p:hover,
+.card-guia-foot p.active
+{
+    color: #172A56;
+    text-decoration: underline;
+}
+.text-score{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}

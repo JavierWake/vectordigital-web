@@ -1,0 +1,32 @@
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+
+    color: #ff5000 !important;
+    text-transform: none !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+
+}
+
+.MuiOutlinedInput-root{
+
+    border-color: #ff5000 !important;
+}
+
+.MuiOutlinedInput-input{
+    border-color: #ff5000 !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+.MuiSvgIcon-root{
+    color: #888682 !important;
+}
+
+.MuiSvgIcon-root:hover{
+
+    color: #ff5000 !important;
+
+}

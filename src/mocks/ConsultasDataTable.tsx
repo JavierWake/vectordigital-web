@@ -1,0 +1,566 @@
+import { GridColumns } from "@material-ui/data-grid";
+
+
+export const ConsultasDataTableR = [
+    {
+        id: 1,
+        col1: 'Body',
+        col2: 'Body',
+        col3: 'Quam',
+        col4: 1,
+        col5: 'Body',
+        col6: 'Body',
+        col7: 'Body',
+        col8: 'Body',
+        col9: 'Body',
+        col10: 'Body'
+    },
+    {
+        id: 2,
+        col1: 'Body',
+        col2: 'Body',
+        col3: 'Quam',
+        col4: 1,
+        col5: 'Body',
+        col6: 'Body',
+        col7: 'Body',
+        col8: 'Body',
+        col9: 'Body',
+        col10: 'Body'
+    },
+    {
+        id: 3,
+        col1: 'Body',
+        col2: 'Body',
+        col3: 'Quam',
+        col4: 1,
+        col5: 'Body',
+        col6: 'Body',
+        col7: 'Body',
+        col8: 'Body',
+        col9: 'Body',
+        col10: 'Body'
+    },
+    {
+        id: 4,
+        col1: 'Body',
+        col2: 'Body',
+        col3: 'Quam',
+        col4: 1,
+        col5: 'Body',
+        col6: 'Body',
+        col7: 'Body',
+        col8: 'Body',
+        col9: 'Body',
+        col10: 'Body'
+    },
+    {
+        id: 5,
+        col1: 'Body',
+        col2: 'Body',
+        col3: 'Quam',
+        col4: 1,
+        col5: 'Body',
+        col6: 'Body',
+        col7: 'Body',
+        col8: 'Body',
+        col9: 'Body',
+        col10: 'Body'
+    },
+    {
+        id: 6,
+        col1: 'Body',
+        col2: 'Body',
+        col3: 'Quam',
+        col4: 1,
+        col5: 'Body',
+        col6: 'Body',
+        col7: 'Body',
+        col8: 'Body',
+        col9: 'Body',
+        col10: 'Body'
+    },
+    {
+        id: 7,
+        col1: 'Body',
+        col2: 'Body',
+        col3: 'Quam',
+        col4: 1,
+        col5: 'Body',
+        col6: 'Body',
+        col7: 'Body',
+        col8: 'Body',
+        col9: 'Body',
+        col10: 'Body'
+    },
+    {
+        id: 8,
+        col1: 'Body',
+        col2: 'Body',
+        col3: 'Quam',
+        col4: 1,
+        col5: 'Body',
+        col6: 'Body',
+        col7: 'Body',
+        col8: 'Body',
+        col9: 'Body',
+        col10: 'Body'
+    },
+    {
+        id: 9,
+        col1: 'Body',
+        col2: 'Body',
+        col3: 'Quam',
+        col4: 1,
+        col5: 'Body',
+        col6: 'Body',
+        col7: 'Body',
+        col8: 'Body',
+        col9: 'Body',
+        col10: 'Body'
+    },
+    {
+        id: 10,
+        col1: 'Body',
+        col2: 'Body',
+        col3: 'Quam',
+        col4: 1,
+        col5: 'Body',
+        col6: 'Body',
+        col7: 'Body',
+        col8: 'Body',
+        col9: 'Body',
+        col10: 'Body'
+    },
+    {
+        id: 11,
+        col4: 'Total',
+        col6: 'Total'
+    }
+];
+
+export const ConsultasDataTableC: any[] = [
+    {
+        field: 'col1',
+        headerName: 'Emisora',
+        width: 150,
+        hideSortIcons: true,
+        headerAlign: 'left',
+        align: 'left',
+        disablePadding: true,
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col2',
+        headerName: 'Títulos',
+        width: 150,
+        hideSortIcons: true,
+        headerAlign: 'left',
+        align: 'left',
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col3',
+        headerName: 'Costo Promedio',
+        width: 160,
+        hideSortIcons: true,
+        headerAlign: 'left',
+        align: 'left',
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col4',
+        headerName: 'Costo de Compra',
+        width: 150,
+        hideSortIcons: true,
+        headerAlign: 'left',
+        align: 'left',
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col5',
+        headerName: 'Precio Actual',
+        width: 150,
+        hideSortIcons: true,
+        headerAlign: 'left',
+        align: 'left',
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col6',
+        headerName: 'Ganancia ($)',
+        width: 150,
+        hideSortIcons: true,
+        headerAlign: 'left',
+        align: 'left',
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col7',
+        headerName: 'Ganancia (%)',
+        width: 150,
+        hideSortIcons: true,
+        headerAlign: 'left',
+        align: 'left',
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col8',
+        headerName: 'Títulos en Venta',
+        width: 180,
+        hideSortIcons: true,
+        headerAlign: 'left',
+        align: 'left',
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col9',
+        headerName: 'Títulos Bloqueados',
+        width: 150,
+        hideSortIcons: true,
+        headerAlign: 'left',
+        align: 'left',
+        disablePadding: true,
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col10',
+        headerName: 'Valor en el Mercado',
+        width: 180,
+        hideSortIcons: true,
+        headerAlign: 'left',
+        align: 'left',
+        headerClassName: 'super-app-theme--header',
+    },
+];
+
+export const ConsultasDataTableR0 = [
+    {
+        id: 1,
+        col1: 'Body',
+        col2: 'Body',
+        col3: 'Quam',
+        col4: 1,
+        col5: 'Body',
+        col6: 'Body',
+        col7: 'Body',
+        col8: 'Body',
+        col9: 'Body',
+        col10: 'Body'
+    },
+    {
+        id: 11,
+        col4: 'Total',
+        col6: 'Total'
+    },
+];
+
+export const ConsultasDataTableC0: any[] = [
+    {
+        field: 'col1',
+        headerName: 'Emisora',
+        width: 150,
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col2',
+        headerName: 'Títulos',
+        width: 150,
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col3',
+        headerName: 'Costo Promedio',
+        width: 160,
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col4',
+        headerName: 'Costo de Compra',
+        width: 150,
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col5',
+        headerName: 'Precio Valuación',
+        width: 150,
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col6',
+        headerName: 'Ganancia ($)',
+        width: 150,
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col7',
+        headerName: 'Ganancia (%)',
+        width: 150,
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col8',
+        headerName: 'Títulos en Venta',
+        width: 180,
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col9',
+        headerName: 'Títulos Bloqueados',
+        width: 150,
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col10',
+        headerName: 'Importe',
+        width: 180,
+        headerClassName: 'super-app-theme--header',
+    },
+];
+
+export const ConsultasDataTableR1 = [
+    {
+        id: 1,
+        col1: 'Body',
+        col2: 'Body',
+        col3: 'Quam',
+        col4: 1,
+        col5: 'Body',
+        col6: 'Body',
+        col7: 'Body',
+        col8: 'Body'
+    },
+];
+
+export const ConsultasDataTableC1: any[] = [
+    {
+        field: 'emisora',
+        headerName: 'Dia',
+        width: 100,
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col2',
+        headerName: 'Operación',
+        width: 150,
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col3',
+        headerName: 'Descripción',
+        width: 160,
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col4',
+        headerName: 'Títulos',
+        width: 150,
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col5',
+        headerName: 'Precio',
+        width: 150,
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col6',
+        headerName: 'Cargo',
+        width: 150,
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col7',
+        headerName: 'Abono',
+        width: 150,
+        headerClassName: 'super-app-theme--header',
+    },
+    {
+        field: 'col8',
+        headerName: 'Saldo Efectivo',
+        width: 180,
+        headerClassName: 'super-app-theme--header',
+    },
+];
+
+export const ConsultasDataTableR2 = [
+    {   id: "",
+        emisora: 'Body',
+        col2: 'Body', 
+        col3: 'Quam', 
+        col4: 1, 
+        col5: 'Body', 
+        col6: 'Body', 
+        col7: 'Body', 
+        col8: 'Body' 
+    },
+    { 
+        id: 2, 
+        col1: 'Body', 
+        col2: 'Body', 
+        col3: 'Body', 
+        col4: 2, 
+        col5: 'Body', 
+        col6: 'Body', 
+        col7: 'Body', 
+        col8: 'Body' 
+    },
+    { 
+        id: 3, 
+        col1: 'Body', 
+        col2: 'Body', 
+        col3: 'Body', 
+        col4: 3, 
+        col5: 'Body', 
+        col6: 'Body', 
+        col7: 'Body', 
+        col8: 'Body' 
+    },
+    { 
+        id: 4, 
+        col1: 'Body', 
+        col2: 'Body', 
+        col3: 'Body', 
+        col4: 4, 
+        col5: 'Body', 
+        col6: 'Body', 
+        col7: 'Body', 
+        col8: 'Body'
+     },
+    { 
+        id: 5, 
+        col1: 'Body', 
+        col2: 'Body', 
+        col3: 'Body', 
+        col4: 5, 
+        col5: 'Body', 
+        col6: 'Body', 
+        col7: 'Body', 
+        col8: 'Body' 
+    },
+    { 
+        id: 6, 
+        col1: 'Body', 
+        col2: 'Body', 
+        col3: 'Body', 
+        col4: 6, 
+        col5: 'Body', 
+        col6: 'Body', 
+        col7: 'Body', 
+        col8: 'Body' 
+    },
+    { 
+        id: 7, 
+        col1: 'Body', 
+        col2: 'Body', 
+        col3: 'Body',
+        col4: 7, 
+        col5: 'Body', 
+        col6: 'Body', 
+        col7: 'Body', 
+        col8: 'Body' 
+    },
+    { 
+        id: 8, 
+        col1: 'Body', 
+        col2: 'Body', 
+        col3: 'Body', 
+        col4: 8, 
+        col5: 'Body', 
+        col6: 'Body', 
+        col7: 'Body',
+        col8: 'Body' 
+    },
+    { 
+        id: 9, 
+        col1: 'Body', 
+        col2: 'Body', 
+        col3: 'Body', 
+        col4: 9,
+        col5: 'Body', 
+        col6: 'Body', 
+        col7: 'Body', 
+        col8: 'Body' 
+    },
+    { 
+        id: 10, 
+        col1: 'Body', 
+        col2: 'Body', 
+        col3: 'Body', 
+        col4: 10, 
+        col5: 'Body', 
+        col6: 'Body', 
+        col7: 'Body', 
+        col8: 'Body' 
+    },
+];
+
+export const ConsultasDataTableC2: any[] = [
+    { 
+        field: 'col1', 
+        headerName: 'Dia', 
+        width: 100, 
+        resizable: false ,
+        headerClassName: 'super-app-theme--header',
+    },
+    { 
+        field: 'col2', 
+        headerName: 'Operación', 
+        width: 150, 
+        resizable: false,
+        headerClassName: 'super-app-theme--header', 
+    },
+    { 
+        field: 'col3', 
+        headerName: 'Descripción', 
+        width: 160, 
+        resizable: false,
+        headerClassName: 'super-app-theme--header', 
+    },
+    { 
+        field: 'col4',
+        headerName: 'Títulos', 
+        width: 150, 
+        resizable: false,
+        headerClassName: 'super-app-theme--header', 
+    },
+    { 
+        field: 'col5', 
+        headerName: 'Precio', 
+        width: 150, 
+        resizable: false,
+        headerClassName: 'super-app-theme--header', 
+    },
+    { 
+        field: 'col6', 
+        headerName: 'Cargo', 
+        width: 150, 
+        resizable: false,
+        headerClassName: 'super-app-theme--header', 
+    },
+    { 
+        field: 'col7', 
+        headerName: 'Abono', 
+        width: 150, 
+        resizable: false,
+        headerClassName: 'super-app-theme--header', 
+    },
+    { 
+        field: 'col8', 
+        headerName: 'Saldo Efectivo', 
+        width: 180, 
+        resizable: false,
+        headerClassName: 'super-app-theme--header', 
+    },
+];
+export const headers = [
+    { label: "First Name", key: "id" },
+    { label: "Last Name", key: "col1" },
+    { label: "Email", key: "col2" },
+    { label: "First Name", key: "col3" },
+    { label: "Last Name", key: "col4" },
+    { label: "Email", key: "col5" },
+    { label: "First Name", key: "col6" },
+    { label: "Last Name", key: "col7" },
+    { label: "Email", key: "col8" },
+  ];

@@ -1,0 +1,25 @@
+
+
+.MuiDataGrid-columnHeaderTitle{
+    font-weight: bold !important;
+
+
+}
+.MuiDataGrid-iconSeparator{
+    display: none !important;
+}
+
+.MuiDataGrid-columnHeaderDraggableContainer{
+    font-weight: bold;
+    white-space: pre-wrap;
+
+}
+.MuiDataGrid-columnsContainer{
+    font-weight: bold !important;
+    white-space: pre-wrap;
+    pointer-events: none; 
+}
+.MuiDataGrid-footerContainer{
+    display: none !important;
+}
+
