@@ -2,6 +2,193 @@ import React, { useState } from 'react';
 import resultados from '../../assets/fakeChart-resultados.png'
 import balance from '../../assets/fakeChart-balance.png'
 import efectivo from '../../assets/fakeChart-efectivo.png'
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
+
+
+// Tabla de Resultados
+function resultadosData(
+  name: string,
+  CARG5Y: string,
+  pROYECCION: string,
+  A2022: string,
+  A2021: string,
+  A2020: string,
+  A2019: string,
+  A2018: string,
+  A2017: string,
+) {
+  return { name, CARG5Y, pROYECCION, A2022, A2021, A2020, A2019, A2018, A2017 };
+}
+
+const rowsData = [
+    resultadosData('Ventas Netas Totales', 'XX', 'XX', 'XX', 'XX', 'XX', 'XX', 'XX', 'XX'),
+    resultadosData('Crecimeinto en Ventas Netas Totales', '', 'XX%', 'XX%', 'XX%', 'XX%', 'XX%', 'XX%', 'XX%'),
+    resultadosData('Utilidad Bruta', 'XX', 'XX', 'XX', 'XX', 'XX', 'XX', 'XX', 'XX'),
+    resultadosData('Utilidad de Operación', 'XX', 'XX', 'XX', 'XX', 'XX', 'XX', 'XX', 'XX'),
+    resultadosData('UFAIDA', 'XX', 'XX', 'XX', 'XX', 'XX', 'XX', 'XX', 'XX'),
+    resultadosData('Crecimeinto en UAFIDA', 'XX%', 'XX%', 'XX%', 'XX%', 'XX%', 'XX%', 'XX%', 'XX%'),
+    resultadosData('Resultado Neto', 'XX', 'XX', 'XX', 'XX', 'XX', 'XX', 'XX', 'XX'),
+    resultadosData('Crecimeinto en Resultado Neto', 'XX%', 'XX%', 'XX%', 'XX%', 'XX%', 'XX%', 'XX%', 'XX%'),
+];
+
+function TableResultados() {
+  return (
+    <TableContainer component={Paper}>
+      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+        <TableHead>
+          <TableRow>
+            <TableCell> </TableCell>
+            <TableCell align="right">CARG 5Y</TableCell>
+            <TableCell align="right">Proyección Final de Año</TableCell>
+            <TableCell align="right">2022</TableCell>
+            <TableCell align="right">2021</TableCell>
+            <TableCell align="right">2020</TableCell>
+            <TableCell align="right">2019</TableCell>
+            <TableCell align="right">2018</TableCell>
+            <TableCell align="right">2017</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {rowsData.map((row) => (
+            <TableRow
+              key={row.name}
+              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+            >
+              <TableCell component="th" scope="row">
+                {row.name}
+              </TableCell>
+              <TableCell align="right">{row.CARG5Y}</TableCell>
+              <TableCell align="right">{row.pROYECCION}</TableCell>
+              <TableCell align="right">{row.A2022}</TableCell>
+              <TableCell align="right">{row.A2021}</TableCell>
+              <TableCell align="right">{row.A2020}</TableCell>
+              <TableCell align="right">{row.A2019}</TableCell>
+              <TableCell align="right">{row.A2018}</TableCell>
+              <TableCell align="right">{row.A2017}</TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
+  );
+}
+
+// Tabla de Balance
+function balanceData(
+    name: string,
+    A2021: string,
+    A2020: string,
+    A2019: string,
+    A2018: string,
+    A2017: string,
+  ) {
+    return { name, A2021, A2020, A2019, A2018, A2017 };
+  }
+  
+  const rowsBalance= [
+    balanceData('Activos Totales', 'XX', 'XX', 'XX', 'XX', 'XX'),
+    balanceData('Pasivos Totales', 'XX%', 'XX%', 'XX%', 'XX%', 'XX%'),
+    balanceData('Capital Contable ', 'XX', 'XX', 'XX', 'XX', 'XX'),
+  ];
+  
+  function TableBalance() {
+    return (
+      <TableContainer component={Paper}>
+        <Table sx={{ minWidth: 650 }} aria-label="simple table">
+          <TableHead>
+            <TableRow>
+              <TableCell> </TableCell>
+              <TableCell align="right">2021</TableCell>
+              <TableCell align="right">2020</TableCell>
+              <TableCell align="right">2019</TableCell>
+              <TableCell align="right">2018</TableCell>
+              <TableCell align="right">2017</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {rowsBalance.map((row) => (
+              <TableRow
+                key={row.name}
+                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+              >
+                <TableCell component="th" scope="row">
+                  {row.name}
+                </TableCell>
+                <TableCell align="right">{row.A2021}</TableCell>
+                <TableCell align="right">{row.A2020}</TableCell>
+                <TableCell align="right">{row.A2019}</TableCell>
+                <TableCell align="right">{row.A2018}</TableCell>
+                <TableCell align="right">{row.A2017}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+    );
+  }
+
+// Tabla de Efectivo
+function efectivoData(
+    name: string,
+    A2021: string,
+    A2020: string,
+    A2019: string,
+    A2018: string,
+    A2017: string,
+  ) {
+    return { name, A2021, A2020, A2019, A2018, A2017 };
+  }
+  
+  const rowsEfectivo= [
+    efectivoData('Flujos netos de efectivo por actividades de operación', 'XX', 'XX', 'XX', 'XX', 'XX'),
+    efectivoData('Flujos netos de efectivo por actividades de inversión', 'XX', 'XX', 'XX', 'XX', 'XX'),
+    efectivoData('Flujos netos de efectivo por actividades de financiamiento', 'XX', 'XX', 'XX', 'XX', 'XX'),
+    efectivoData('Incremento o disminución neta de efectivo', 'XX', 'XX', 'XX', 'XX', 'XX'),
+  ];
+  
+  function TableEfectivo() {
+    return (
+      <TableContainer component={Paper}>
+        <Table sx={{ minWidth: 650 }} aria-label="simple table">
+          <TableHead>
+            <TableRow>
+              <TableCell> </TableCell>
+              <TableCell align="right" className="font-bold">2021</TableCell>
+              <TableCell align="right">2020</TableCell>
+              <TableCell align="right">2019</TableCell>
+              <TableCell align="right">2018</TableCell>
+              <TableCell align="right">2017</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {rowsEfectivo.map((row) => (
+              <TableRow
+                key={row.name}
+                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+              >
+                <TableCell component="th" scope="row">
+                  {row.name}
+                </TableCell>
+                <TableCell align="right">{row.A2021}</TableCell>
+                <TableCell align="right">{row.A2020}</TableCell>
+                <TableCell align="right">{row.A2019}</TableCell>
+                <TableCell align="right">{row.A2018}</TableCell>
+                <TableCell align="right">{row.A2017}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+    );
+  }
+
+
 
 const IndicadoresAnalisisFundamental = ( ) =>{
     const [state, setState] = useState({
@@ -38,7 +225,8 @@ const IndicadoresAnalisisFundamental = ( ) =>{
     const GraficaAnalisisFundamental = () =>{
         if(state.resultados){
             return(
-                <div>
+            <section>
+                <div className='mb-9'>
                     <h2 className='font-semibold text-xl mb-7 inline-block mr-11'>Estado de Resultados</h2>
                     <div className='inline-block'>
                         <button 
@@ -76,11 +264,14 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                         </div>
                     </div>
                 </div>
+                <TableResultados/>
+            </section>
             )
         }
         else if( state.general ){
             return(
-                <div>
+                <section>
+                <div className='mb-9'>
                     <h2 className='font-semibold text-xl mb-7 inline-block mr-11'>Del Balance</h2>
                     <div className='inline-block'>
                         <button 
@@ -126,11 +317,14 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                         </div>
                     </div>
                 </div>
+                <TableBalance/>
+                </section>
             )
         }
         else{
             return(
-                <div>
+            <section>
+                <div className='mb-9'>
                     <h2 className='font-semibold text-xl mb-7 inline-block mr-11'>Flujo de Efectivo </h2>
                     <div className='inline-block'>
                         <button 
@@ -157,9 +351,12 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                                 <span>Flujo de efectivo operativo / Ventas</span>
                                 <span>45%</span>
                             </p>
+
                         </div>
                     </div>
                 </div>
+                <TableEfectivo/>
+            </section>
             )
         }
     }

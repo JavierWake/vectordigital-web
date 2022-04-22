@@ -102,7 +102,7 @@ const IntroduccionVentas = ({ action }) =>{
                         className="bg-red-600 p-1 text-sm text-gray-100 border-1 border-red-600 rounded mb-4 hover:border-red-600 hover:bg-white hover:text-red-600"
                         onClick={ action }
                     >
-                        Ver ordenes
+                        Continuar
                     </button>
                 </div>
         </article>
@@ -161,7 +161,7 @@ const ValoresGarantia = ( {action} ) =>{
                     className="bg-red-600 p-1 text-sm text-gray-100 border-1 border-red-600 rounded mb-4 hover:border-red-600 hover:bg-white hover:text-red-600"
                     onClick={action}
                 >
-                    Ver ordenes
+                    Continuar
                 </button>
             </div>
         </article>
