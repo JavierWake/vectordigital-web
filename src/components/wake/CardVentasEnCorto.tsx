@@ -245,9 +245,7 @@ const CardVentasEnCorto = () => {
     }
     else{
         return (
-            <article className='w-5/6 max-w-sm pb-20'>
-                <h3 className='text-2xl mb-7 ml-5'>Operaciones</h3>
-            </article>
+            <IntroduccionVentas action={ onValoresGarantia }/>
         );
     }
 }
