@@ -3,6 +3,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: ["checked"],
+      backgroundImage: {
+        ticket: "url(../assets/ticketTriangle.png)"
+      },
       borderColor: ["checked"],
       colors: {
         gray: {
