@@ -122,7 +122,7 @@ const ChartIndicadoresAnalisisFundamental = ( { resultados, general, efectivo } 
                 <div 
                   className="chart-analisis-fundamental__barra p-1 border-l-4 rounded-r-md mb-3"
                   style={{
-                    width: `${90}%`
+                    width: `${efectivo ? 50 : 90}%`
                   }}
                 >
                   <samp className='chart-analisis-fundamental__barra__text text-red-600'>{textChart.barra1}</samp>
@@ -141,7 +141,7 @@ const ChartIndicadoresAnalisisFundamental = ( { resultados, general, efectivo } 
               <div 
                 className="chart-analisis-fundamental__barra chart-bg--black p-1 border-l-4 rounded-r-md mb-9"
                 style={{
-                  width: `${80}%`
+                  width: `${efectivo ? 40 : 80}%`
                 }}
               >
                 <span className={`chart-analisis-fundamental__barra__text text-blue-950 ${efectivo && "font-9"}`}>{textChart.barra2}</span>
@@ -161,7 +161,7 @@ const ChartIndicadoresAnalisisFundamental = ( { resultados, general, efectivo } 
                 <div 
                   className="chart-analisis-fundamental__barra p-1 border-l-4 rounded-r-md mb-3"
                   style={{
-                    width: `${70}%`
+                    width: `${efectivo ? 40 : 70}%`
                   }}
                 >
                   <samp className='chart-analisis-fundamental__barra__text text-red-600'>{textChart.barra1}</samp>
@@ -180,7 +180,7 @@ const ChartIndicadoresAnalisisFundamental = ( { resultados, general, efectivo } 
                 <div 
                   className="chart-analisis-fundamental__barra chart-bg--black p-1 border-l-4 rounded-r-md mb-9"
                   style={{
-                    width: `${65}%`
+                    width: `${efectivo ? 35 : 65}%`
       
                   }}
                 >
@@ -201,7 +201,7 @@ const ChartIndicadoresAnalisisFundamental = ( { resultados, general, efectivo } 
                 <div 
                   className="chart-analisis-fundamental__barra p-1 border-l-4 rounded-r-md mb-3"
                   style={{
-                    width: `${50}%`
+                    width: `${efectivo ? 45 : 50}%`
                   }}
                 >
                   <samp className='chart-analisis-fundamental__barra__text text-red-600'>{textChart.barra1}</samp>
@@ -220,7 +220,7 @@ const ChartIndicadoresAnalisisFundamental = ( { resultados, general, efectivo } 
                 <div 
                   className="chart-analisis-fundamental__barra chart-bg--black p-1 border-l-4 rounded-r-md mb-9"
                   style={{
-                    width: `${45}%`
+                    width: `${efectivo ? 30 : 45}%`
                   }}
                 >
                   <span className={`chart-analisis-fundamental__barra__text text-blue-950 ${efectivo && "font-9"}`}>{textChart.barra2}</span>
@@ -240,7 +240,7 @@ const ChartIndicadoresAnalisisFundamental = ( { resultados, general, efectivo } 
                 <div 
                   className="chart-analisis-fundamental__barra p-1 border-l-4 rounded-r-md mb-3"
                   style={{
-                    width: `${40}%`
+                    width: `${efectivo ? 40 : 40}%`
                   }}
                 >
                   <samp className='chart-analisis-fundamental__barra__text text-red-600'>{textChart.barra1}</samp>
@@ -259,12 +259,14 @@ const ChartIndicadoresAnalisisFundamental = ( { resultados, general, efectivo } 
                 <div 
                   className="chart-analisis-fundamental__barra chart-bg--black p-1 border-l-4 rounded-r-md mb-8"
                   style={{
-                    width: `${35}%`
+                    width: `${efectivo ? 25 : 35}%`
                   }}
                 >
                   <span className={`chart-analisis-fundamental__barra__text text-blue-950 ${efectivo && "font-9"}`}>{textChart.barra2}</span>
                 </div>
               </HtmlTooltip>
+              <div className='chart-analisis-fundamental__line'></div>
+              <div className='chart-analisis-fundamental__line chart-analisis-fundamental__line--2'></div>
           </div>
 
           <p className='chart-analisis-fundamental__values--x'>
