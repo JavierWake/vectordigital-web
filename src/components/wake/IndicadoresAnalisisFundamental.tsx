@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import resultados from '../../assets/fakeChart-resultados.png'
 
-import efectivo from '../../assets/fakeChart-efectivo.png'
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -10,6 +8,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import ChartIndicadoresAnalisisFundamental from './ChartIndicadoresAnalisisFundamental';
+import VerReporteFlujoEfectivoCompleto from './VerReporteFlujoEfectivoCompleto';
 
 
 // Tabla de Resultados
@@ -226,7 +225,7 @@ const IndicadoresAnalisisFundamental = ( ) =>{
     const GraficaAnalisisFundamental = () =>{
         if(state.resultados){
             return(
-            <section>
+            <section className='mb-14'>
                 <div className='mb-9'>
                     <h2 className='font-semibold text-xl mb-7 inline-block mr-11'>Estado de Resultados</h2>
                     <div className='inline-block'>
@@ -275,7 +274,7 @@ const IndicadoresAnalisisFundamental = ( ) =>{
         }
         else if( state.general ){
             return(
-                <section>
+                <section className='mb-14'>
                 <div className='mb-9'>
                     <h2 className='font-semibold text-xl mb-7 inline-block mr-11'>Del Balance</h2>
                     <div className='inline-block'>
@@ -332,7 +331,7 @@ const IndicadoresAnalisisFundamental = ( ) =>{
         }
         else{
             return(
-            <section>
+            <section className='mb-14'>
                 <div className='mb-9'>
                     <h2 className='font-semibold text-xl mb-7 inline-block mr-11'>Flujo de Efectivo </h2>
                     <div className='inline-block'>
@@ -503,6 +502,7 @@ const IndicadoresAnalisisFundamental = ( ) =>{
 
             <GraficaAnalisisFundamental/>
 
+            <VerReporteFlujoEfectivoCompleto />
         </section>
     );
 }
