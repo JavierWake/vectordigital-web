@@ -8,7 +8,7 @@ import '../../styles/ticket.css'
 
 const IntroduccionVentas = ({ action }) =>{
     return (
-        <article className='w-5/6 max-w-sm pt-7 shadow-2xl'>
+        <article className='w-5/6 max-w-sm pt-7 shadow-2xl '>
             <h3 className='text-center mb-6 text-base font-semibold'>Instrucción de Ventas en Corto</h3>
             <div className='ticker-path w-11/12 px-8 mx-auto mb-4 flex gap-x-8 text-xs'>
                <div className='w-2/4'>
@@ -102,7 +102,7 @@ const IntroduccionVentas = ({ action }) =>{
                         className="bg-red-600 p-1 text-sm text-gray-100 border-1 border-red-600 rounded mb-4 hover:border-red-600 hover:bg-white hover:text-red-600"
                         onClick={ action }
                     >
-                        Ver ordenes
+                        Continuar
                     </button>
                 </div>
         </article>
@@ -161,7 +161,7 @@ const ValoresGarantia = ( {action} ) =>{
                     className="bg-red-600 p-1 text-sm text-gray-100 border-1 border-red-600 rounded mb-4 hover:border-red-600 hover:bg-white hover:text-red-600"
                     onClick={action}
                 >
-                    Ver ordenes
+                    Continuar
                 </button>
             </div>
         </article>
