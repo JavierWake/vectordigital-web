@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import resultados from '../../assets/fakeChart-resultados.png'
-import balance from '../../assets/fakeChart-balance.png'
+
 import efectivo from '../../assets/fakeChart-efectivo.png'
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -9,6 +9,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import ChartIndicadoresAnalisisFundamental from './ChartIndicadoresAnalisisFundamental';
 
 
 // Tabla de Resultados
@@ -242,7 +243,11 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                     </div>
 
                     <div className='flex text-sm font-normal'>
-                        <img src={resultados}/>
+                        <ChartIndicadoresAnalisisFundamental
+                            resultados={state.resultados} 
+                            general={state.general} 
+                            efectivo={state.efectivo}
+                        />
                         <div className=' pt-6 px-8 pb-10 w-96 h-min border border-gray-200 rounded'>
                             <p className='text-gray-150 pb-1.5 px-0.5 mb-7'>Últimos 12 meses</p>
                             <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-200 mb-7'>
@@ -287,7 +292,11 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                     </div>
 
                     <div className='flex text-sm font-normal'>
-                        <img src={balance}/>
+                        <ChartIndicadoresAnalisisFundamental
+                            resultados={state.resultados} 
+                            general={state.general} 
+                            efectivo={state.efectivo}
+                        />
                         <div className=' pt-6 px-8 pb-10 w-96 h-min border border-gray-200 rounded'>
                             <p className='text-gray-150 pb-1.5 px-0.5 mb-7'>Últimos 12 meses/Último trimestre</p>
                             <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-200 mb-7'>
@@ -340,7 +349,11 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                     </div>
 
                     <div className='flex text-sm font-normal'>
-                        <img src={efectivo}/>
+                        <ChartIndicadoresAnalisisFundamental
+                            resultados={state.resultados} 
+                            general={state.general} 
+                            efectivo={state.efectivo}
+                        />
                         <div className=' pt-6 px-8 pb-10 w-96 h-min border border-gray-200 rounded'>
                             <p className='text-gray-150 pb-1.5 px-0.5 mb-7'>Últimos 12 meses</p>
                             <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-200 mb-7'>

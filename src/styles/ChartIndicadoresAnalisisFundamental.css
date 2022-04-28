@@ -1,0 +1,71 @@
+.chart-analisis-fundamental__container{
+    display:grid;
+    grid-template-columns: auto 70px;
+    grid-template-rows: auto 40px;
+    grid-template-areas: 
+        "graph    y"
+        "x    ."
+    ;
+    width: 520px;
+    height: auto;
+    max-height: 450px;
+    margin: 4em auto;
+}
+.chart-analisis-fundamental__barra__container{
+    position: relative;
+    grid-area: graph;
+    padding-left: 4px;
+    width: 100%;
+    height: auto;
+    transform: rotate(-90deg);
+    border-bottom: 1px solid #C4C4C4;
+    border-left: 1px solid #C4C4C4;
+}
+.chart-analisis-fundamental__barra{
+    height: 2em;
+    background: rgba(255, 80, 0, 0.24);
+    border-left: 3px solid #FF5000;
+}
+.chart-analisis-fundamental__barra__text{
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 12px;
+}
+.chart-bg--black{
+    background: #A2A9BB;
+    border-left: 3px solid #172A56;
+}
+
+.chart-analisis-fundamental__values--y{
+    grid-area: y;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 0 70px;
+    text-align: center
+}
+.chart-analisis-fundamental__values--x{
+    grid-area: x;
+    display: flex;
+    justify-content: space-between;
+}
+.data-chart{
+    transform: translateY(-170%);
+}
+
+.data-chart p samp{
+    max-width: 160px;
+}
+.font-9{
+    font-size: 9px;
+}
+
+.graph-efectivo 
+.chart-analisis-fundamental__barra{
+    position: relative;
+    left: 40%;
+}
+.graph-efectivo 
+.chart-bg--black{
+    transform: rotate(180deg) translateX(100%);
+}
