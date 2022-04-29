@@ -181,7 +181,7 @@ const ChartIndicadoresAnalisisFundamental = ( { resultados, general, efectivo } 
                   className="chart-analisis-fundamental__barra chart-bg--black p-1 border-l-4 rounded-r-md mb-9"
                   style={{
                     width: `${efectivo ? 35 : 65}%`
-      
+                    
                   }}
                 >
                   <span className={`chart-analisis-fundamental__barra__text text-blue-950 ${efectivo && "font-9"}`}>{textChart.barra2}</span>

@@ -3,9 +3,6 @@ import { AiOutlineInfoCircle } from "react-icons/ai";
 import logo from '../../assets/Vector-triangulo-blanco.svg'
 import '../../styles/ticket.css'
 
-
-
-
 const IntroduccionVentas = ({ action }) =>{
     return (
         <article className='w-5/6 max-w-sm pt-7 shadow-2xl '>

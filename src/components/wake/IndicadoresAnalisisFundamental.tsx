@@ -9,6 +9,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import ChartIndicadoresAnalisisFundamental from './ChartIndicadoresAnalisisFundamental';
 import VerReporteFlujoEfectivoCompleto from './VerReporteFlujoEfectivoCompleto';
+import GraficaRendimientoHistoricoAnual from './GraficaRendimientoHistoricoAnual';
 
 
 // Tabla de Resultados
@@ -44,14 +45,14 @@ function TableResultados() {
         <TableHead>
           <TableRow>
             <TableCell> </TableCell>
-            <TableCell align="right">CARG 5Y</TableCell>
-            <TableCell align="right">Proyección Final de Año</TableCell>
-            <TableCell align="right">2022</TableCell>
-            <TableCell align="right">2021</TableCell>
-            <TableCell align="right">2020</TableCell>
-            <TableCell align="right">2019</TableCell>
-            <TableCell align="right">2018</TableCell>
-            <TableCell align="right">2017</TableCell>
+            <TableCell align="right"><span className='font-semibold'>CARG 5Y</span> </TableCell>
+            <TableCell align="right"><span className='font-semibold'>Proyección Final de Año</span></TableCell>
+            <TableCell align="right"><span className='font-semibold'>2022</span></TableCell>
+            <TableCell align="right"><span className='font-semibold'>2021</span></TableCell>
+            <TableCell align="right"><span className='font-semibold'>2020</span></TableCell>
+            <TableCell align="right"><span className='font-semibold'>2019</span></TableCell>
+            <TableCell align="right"><span className='font-semibold'>2018</span></TableCell>
+            <TableCell align="right"><span className='font-semibold'>2017</span></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -104,11 +105,11 @@ function balanceData(
           <TableHead>
             <TableRow>
               <TableCell> </TableCell>
-              <TableCell align="right">2021</TableCell>
-              <TableCell align="right">2020</TableCell>
-              <TableCell align="right">2019</TableCell>
-              <TableCell align="right">2018</TableCell>
-              <TableCell align="right">2017</TableCell>
+              <TableCell align="right"><span className='font-semibold'>2021</span></TableCell>
+              <TableCell align="right"><span className='font-semibold'>2020</span></TableCell>
+              <TableCell align="right"><span className='font-semibold'>2019</span></TableCell>
+              <TableCell align="right"><span className='font-semibold'>2018</span></TableCell>
+              <TableCell align="right"><span className='font-semibold'>2017</span></TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -159,11 +160,11 @@ function efectivoData(
           <TableHead>
             <TableRow>
               <TableCell> </TableCell>
-              <TableCell align="right" className="font-bold">2021</TableCell>
-              <TableCell align="right">2020</TableCell>
-              <TableCell align="right">2019</TableCell>
-              <TableCell align="right">2018</TableCell>
-              <TableCell align="right">2017</TableCell>
+              <TableCell align="right"><span className='font-semibold'>2021</span></TableCell>
+              <TableCell align="right"><span className='font-semibold'>2020</span></TableCell>
+              <TableCell align="right"><span className='font-semibold'>2019</span></TableCell>
+              <TableCell align="right"><span className='font-semibold'>2018</span></TableCell>
+              <TableCell align="right"><span className='font-semibold'>2017</span></TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -247,21 +248,21 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                             general={state.general} 
                             efectivo={state.efectivo}
                         />
-                        <div className=' pt-6 px-8 pb-10 w-96 h-min border border-gray-200 rounded'>
+                        <div className=' pt-6 px-8 pb-10 w-96 h-full border border-gray-200 rounded'>
                             <p className='text-gray-150 pb-1.5 px-0.5 mb-7'>Últimos 12 meses</p>
-                            <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-200 mb-7'>
+                            <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-300 mb-7'>
                                 <span>Margen bruto</span>
                                 <span>xx%</span>
                             </p>
-                            <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-200 mb-7'>
+                            <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-300 mb-7'>
                                 <span>Margen de Operación</span>
                                 <span>xx%</span>
                             </p>
-                            <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-200 mb-7'>
+                            <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-300 mb-7'>
                                 <span>Margen EBITDA</span>
                                 <span>xx%</span>
                             </p>
-                            <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-200 mb-7'>
+                            <p className='flex justify-between pb-1.5 px-0.5 border-b mb-7'>
                                 <span>Margen Neto</span>
                                 <span>xx%</span>
                             </p>
@@ -296,29 +297,29 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                             general={state.general} 
                             efectivo={state.efectivo}
                         />
-                        <div className=' pt-6 px-8 pb-10 w-96 h-min border border-gray-200 rounded'>
+                        <div className=' pt-6 px-8 pb-10 w-96 h-full border border-gray-200 rounded'>
                             <p className='text-gray-150 pb-1.5 px-0.5 mb-7'>Últimos 12 meses/Último trimestre</p>
-                            <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-200 mb-7'>
+                            <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-300 mb-7'>
                                 <span>Prueba ácida</span>
                                 <span>xx%</span>
                             </p>
-                            <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-200 mb-7'>
+                            <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-300 mb-7'>
                                 <span>Pasivos Totales / Activos totales</span>
                                 <span>xx%</span>
                             </p>
-                            <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-200 mb-7'>
+                            <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-300 mb-7'>
                                 <span>Deuda a Largo Plazo a Capital</span>
                                 <span>xx%</span>
                             </p>
-                            <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-200 mb-7'>
+                            <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-300 mb-7'>
                                 <span>Deuda Total a Capital</span>
                                 <span>xx%</span>
                             </p>
-                            <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-200 mb-7'>
+                            <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-300 mb-7'>
                                 <span>Deuda Neta </span>
                                 <span>xx%</span>
                             </p>
-                            <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-200 mb-7'>
+                            <p className='flex justify-between pb-1.5 px-0.5 border-b mb-7'>
                                 <span>UFAIDA/Pago de Intereses de Deuda </span>
                                 <span>xx%</span>
                             </p>
@@ -353,9 +354,9 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                             general={state.general} 
                             efectivo={state.efectivo}
                         />
-                        <div className=' pt-6 px-8 pb-10 w-96 h-min border border-gray-200 rounded'>
+                        <div className=' pt-6 px-8 pb-10 w-96 h-full border border-gray-200 rounded'>
                             <p className='text-gray-150 pb-1.5 px-0.5 mb-7'>Últimos 12 meses</p>
-                            <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-200 mb-7'>
+                            <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-300 mb-7'>
                                 <span>Flujo de Caja por Acción</span>
                                 <span>$2,345</span>
                             </p>
@@ -373,17 +374,25 @@ const IndicadoresAnalisisFundamental = ( ) =>{
         }
     }
 
-    return (
-        <section className='w-11/12 m-auto'>
-            <h2 className='font-semibold text-xl mb-7'>Indicadores de Análisis Fundamental</h2>
 
-            <div className='flex justify-evenly w-full mb-14 text-sm'>
-                <div className='flex flex-col justify-between text-center h-full'>
-                    <p className='font-medium mb-10'>
-                        <span className='border-b border-gray-400'>Val. Empresa</span> <br/> UAFIDA
-                    </p>
-                    <p className='font-medium'>0.0</p>
+// -----------------------
+    return (
+        <React.Fragment>
+            <section className='w-11/12 m-auto'>
+                <h2 className='font-semibold text-xl'>Rendimiento Histórico Anual (cambio en precios)</h2>
+                <div className='w-full h-80'>
+                    <GraficaRendimientoHistoricoAnual/>
                 </div>
+            </section>
+            <section className='w-11/12 m-auto'>
+                <h2 className='font-semibold text-xl mb-7'>Indicadores de Análisis Fundamental</h2>
+                <div className='flex justify-evenly w-full mb-14 text-sm'>
+                    <div className='flex flex-col justify-between text-center h-full'>
+                        <p className='font-medium mb-10'>
+                            <span className='border-b border-gray-400'>Val. Empresa</span> <br/> UAFIDA
+                        </p>
+                        <p className='font-medium'>0.0</p>
+                    </div>
                 <div className='flex flex-col justify-between text-center h-full'>
                     <p className='font-medium mb-2'>
                         <span className='border-b border-gray-400 px-4'>Precio</span> <br/> Utilidad
@@ -477,33 +486,34 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                     </p>
                     <p className='font-medium'>6.3</p>
                 </div>
-            </div>
+                </div>
 
-            <div className='text-sm border-b border-gray-400 mb-7'>
-                <button 
-                    className={`px-4 ${state.resultados && "text-red-600 border-b-4 border-red-600"}`}
-                    onClick={ onResultados }
-                >
-                    Estado de Resultados
-                </button>
-                <button 
-                    className={`px-4 ${state.general && "text-red-600 border-b-4 border-red-600"}`}
-                    onClick={ onGeneral }
-                >
-                    Balance General
-                </button>
-                <button 
-                    className={`px-4 ${state.efectivo && "text-red-600 border-b-4 border-red-600"}`}
-                    onClick={ onEfectivo }
-                >
-                    Flujo de Efectivo
-                </button>
-            </div>
+                <div className='text-sm border-b border-gray-400 mb-7'>
+                    <button 
+                        className={`px-4 ${state.resultados && "text-red-600 border-b-4 border-red-600"}`}
+                        onClick={ onResultados }
+                    >
+                        Estado de Resultados
+                    </button>
+                    <button 
+                        className={`px-4 ${state.general && "text-red-600 border-b-4 border-red-600"}`}
+                        onClick={ onGeneral }
+                    >
+                        Balance General
+                    </button>
+                    <button 
+                        className={`px-4 ${state.efectivo && "text-red-600 border-b-4 border-red-600"}`}
+                        onClick={ onEfectivo }
+                    >
+                        Flujo de Efectivo
+                    </button>
+                </div>
 
             <GraficaAnalisisFundamental/>
 
             <VerReporteFlujoEfectivoCompleto />
-        </section>
+            </section>
+        </React.Fragment>
     );
 }
  
