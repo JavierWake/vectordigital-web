@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import ReactDOM from 'react-dom';
-import '../../styles/ChartIndicadoresAnalisisFundamental.css'
+import '../../../styles/ChartIndicadoresAnalisisFundamental.css'
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Tooltip from '@material-ui/core/Tooltip';
@@ -98,7 +98,6 @@ const ChartIndicadoresAnalisisFundamental = ( { resultados, general, efectivo } 
     )
   }
 
-
     return  (
         <div className='chart-analisis-fundamental__container'>
           <p className='chart-analisis-fundamental__values--y'>
@@ -110,15 +109,17 @@ const ChartIndicadoresAnalisisFundamental = ( { resultados, general, efectivo } 
 
           <div className={`chart-analisis-fundamental__barra__container ${efectivo && "graph-efectivo"}`}>
             <HtmlTooltip
-                title={
-                  <DataChart
-                  title={textChart.hover.title}
+              title={
+                <DataChart
+                  title={textChart.hover.title} 
                   elemnt1Title={textChart.hover.element1}
                   element1Value="$2,000,000" 
                   elemnt2Title={textChart.hover.element2}
                   element2Value = "$500,000"
                 />
-              }>
+              }
+              placement="right"
+            >
                 <div 
                   className="chart-analisis-fundamental__barra p-1 border-l-4 rounded-r-md mb-3"
                   style={{
@@ -137,7 +138,9 @@ const ChartIndicadoresAnalisisFundamental = ( { resultados, general, efectivo } 
                   elemnt2Title={textChart.hover.element2}
                   element2Value = "$500,000"
                 />
-              }>
+              }
+                placement="right"
+              >
               <div 
                 className="chart-analisis-fundamental__barra chart-bg--black p-1 border-l-4 rounded-r-md mb-9"
                 style={{
@@ -157,7 +160,9 @@ const ChartIndicadoresAnalisisFundamental = ( { resultados, general, efectivo } 
                   elemnt2Title={textChart.hover.element2}
                   element2Value = "$500,000"
                 />
-              }>
+              }
+                placement="right"
+              >
                 <div 
                   className="chart-analisis-fundamental__barra p-1 border-l-4 rounded-r-md mb-3"
                   style={{
@@ -176,7 +181,9 @@ const ChartIndicadoresAnalisisFundamental = ( { resultados, general, efectivo } 
                   elemnt2Title={textChart.hover.element2}
                   element2Value = "$500,000"
                 />
-              }>
+              }
+                placement="right"
+              >
                 <div 
                   className="chart-analisis-fundamental__barra chart-bg--black p-1 border-l-4 rounded-r-md mb-9"
                   style={{
@@ -197,7 +204,9 @@ const ChartIndicadoresAnalisisFundamental = ( { resultados, general, efectivo } 
                   elemnt2Title={textChart.hover.element2}
                   element2Value = "$500,000"
                 />
-              }>
+              }
+                placement="right"
+              >
                 <div 
                   className="chart-analisis-fundamental__barra p-1 border-l-4 rounded-r-md mb-3"
                   style={{
@@ -216,7 +225,9 @@ const ChartIndicadoresAnalisisFundamental = ( { resultados, general, efectivo } 
                   elemnt2Title={textChart.hover.element2}
                   element2Value = "$500,000"
                 />
-              }>
+              }
+                placement="right"
+              >
                 <div 
                   className="chart-analisis-fundamental__barra chart-bg--black p-1 border-l-4 rounded-r-md mb-9"
                   style={{
@@ -236,7 +247,9 @@ const ChartIndicadoresAnalisisFundamental = ( { resultados, general, efectivo } 
                   elemnt2Title={textChart.hover.element2}
                   element2Value = "$500,000"
                 />
-              }>
+              }
+                placement="right"
+              >
                 <div 
                   className="chart-analisis-fundamental__barra p-1 border-l-4 rounded-r-md mb-3"
                   style={{
@@ -255,7 +268,9 @@ const ChartIndicadoresAnalisisFundamental = ( { resultados, general, efectivo } 
                   elemnt2Title={textChart.hover.element2}
                   element2Value = "$500,000"
                 />
-              }>
+              }
+                placement="right"
+              >
                 <div 
                   className="chart-analisis-fundamental__barra chart-bg--black p-1 border-l-4 rounded-r-md mb-8"
                   style={{

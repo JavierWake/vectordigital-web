@@ -1,13 +1,7 @@
 import React from "react"; 
 import { 
-VictoryTheme, 
-  VictoryVoronoiContainer, 
   VictoryChart, 
-  VictoryLabel, 
-  VictoryLine, 
-  VictoryPortal, 
   VictoryScatter, 
-  VictoryTooltip, 
   VictoryContainer
 } from "victory"; 
 

@@ -226,7 +226,7 @@ const IndicadoresAnalisisFundamental = ( ) =>{
     const GraficaAnalisisFundamental = () =>{
         if(state.resultados){
             return(
-            <section className='mb-14'>
+            <section>
                 <div className='mb-9'>
                     <h2 className='font-semibold text-xl mb-7 inline-block mr-11'>Estado de Resultados</h2>
                     <div className='inline-block'>
@@ -275,7 +275,7 @@ const IndicadoresAnalisisFundamental = ( ) =>{
         }
         else if( state.general ){
             return(
-                <section className='mb-14'>
+                <section >
                 <div className='mb-9'>
                     <h2 className='font-semibold text-xl mb-7 inline-block mr-11'>Del Balance</h2>
                     <div className='inline-block'>
@@ -332,7 +332,7 @@ const IndicadoresAnalisisFundamental = ( ) =>{
         }
         else{
             return(
-            <section className='mb-14'>
+            <section>
                 <div className='mb-9'>
                     <h2 className='font-semibold text-xl mb-7 inline-block mr-11'>Flujo de Efectivo </h2>
                     <div className='inline-block'>
@@ -378,13 +378,13 @@ const IndicadoresAnalisisFundamental = ( ) =>{
 // -----------------------
     return (
         <React.Fragment>
-            <section className='w-11/12 m-auto'>
+            <section className='w-full'>
                 <h2 className='font-semibold text-xl'>Rendimiento Histórico Anual (cambio en precios)</h2>
                 <div className='w-full h-80'>
                     <GraficaRendimientoHistoricoAnual/>
                 </div>
             </section>
-            <section className='w-11/12 m-auto'>
+            <section className='w-full'>
                 <h2 className='font-semibold text-xl mb-7'>Indicadores de Análisis Fundamental</h2>
                 <div className='flex justify-evenly w-full mb-14 text-sm'>
                     <div className='flex flex-col justify-between text-center h-full'>
@@ -511,7 +511,9 @@ const IndicadoresAnalisisFundamental = ( ) =>{
 
             <GraficaAnalisisFundamental/>
 
-            <VerReporteFlujoEfectivoCompleto />
+            <VerReporteFlujoEfectivoCompleto 
+                state={state}
+            />
             </section>
         </React.Fragment>
     );
