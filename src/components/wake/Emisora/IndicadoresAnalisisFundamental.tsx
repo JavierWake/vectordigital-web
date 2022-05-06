@@ -242,7 +242,7 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                         </button>
                     </div>
 
-                    <div className='flex text-sm font-normal'>
+                    <div className='relative flex justify-between text-sm font-normal w-max mx-auto'>
                         <ChartIndicadoresAnalisisFundamental
                             resultados={state.resultados} 
                             general={state.general} 
@@ -267,6 +267,7 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                                 <span>xx%</span>
                             </p>
                         </div>
+                        <p className='absolute right-0 bottom-3 text-gray-150'>*Unidades en pesos MXN/USD dólares</p>
                     </div>
                 </div>
                 <TableResultados/>
@@ -291,13 +292,13 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                         </button>
                     </div>
 
-                    <div className='flex text-sm font-normal'>
+                    <div className='relative flex justify-between text-sm font-normal w-max mx-auto pb-6'>
                         <ChartIndicadoresAnalisisFundamental
                             resultados={state.resultados} 
                             general={state.general} 
                             efectivo={state.efectivo}
                         />
-                        <div className=' pt-6 px-8 pb-10 w-96 h-full border border-gray-200 rounded'>
+                        <div className=' pt-6 px-8 pb-10 w-96 h-min border border-gray-200 rounded'>
                             <p className='text-gray-150 pb-1.5 px-0.5 mb-7'>Últimos 12 meses/Último trimestre</p>
                             <p className='flex justify-between pb-1.5 px-0.5 border-b border-gray-300 mb-7'>
                                 <span>Prueba ácida</span>
@@ -319,11 +320,12 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                                 <span>Deuda Neta </span>
                                 <span>xx%</span>
                             </p>
-                            <p className='flex justify-between pb-1.5 px-0.5 border-b mb-7'>
+                            <p className='flex justify-between px-0.5'>
                                 <span>UFAIDA/Pago de Intereses de Deuda </span>
                                 <span>xx%</span>
                             </p>
                         </div>
+                        <p className='absolute right-0 bottom-0 text-gray-150'>*Unidades en pesos MXN/USD dólares</p>
                     </div>
                 </div>
                 <TableBalance/>
@@ -348,7 +350,7 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                         </button>
                     </div>
 
-                    <div className='flex text-sm font-normal'>
+                    <div className='relative flex justify-between text-sm font-normal w-max mx-auto'>
                         <ChartIndicadoresAnalisisFundamental
                             resultados={state.resultados} 
                             general={state.general} 
@@ -364,8 +366,8 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                                 <span>Flujo de efectivo operativo / Ventas</span>
                                 <span>45%</span>
                             </p>
-
                         </div>
+                        <p className='absolute right-0 bottom-3 text-gray-150'>*Unidades en pesos MXN/USD dólares</p>
                     </div>
                 </div>
                 <TableEfectivo/>
@@ -384,6 +386,7 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                     <GraficaRendimientoHistoricoAnual/>
                 </div>
             </section>
+
             <section className='w-full'>
                 <h2 className='font-semibold text-xl mb-7'>Indicadores de Análisis Fundamental</h2>
                 <div className='flex justify-evenly w-full mb-14 text-sm'>
@@ -391,7 +394,7 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                         <p className='font-medium mb-10'>
                             <span className='border-b border-gray-400'>Val. Empresa</span> <br/> UAFIDA
                         </p>
-                        <p className='font-medium'>0.0</p>
+                        <p className='font-medium text-sm'>0.0</p>
                     </div>
                 <div className='flex flex-col justify-between text-center h-full'>
                     <p className='font-medium mb-2'>
@@ -400,11 +403,11 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                     <div className='flex gap-4'>
                         <div>
                             <p className='text-gray-150 text-xs mb-3.5'>UDM</p>
-                            <p className='font-medium'>9.9</p>
+                            <p className='font-medium text-sm'>9.9</p>
                         </div>
                         <div>
                             <p className='text-gray-150 text-xs mb-3.5'>Estimado</p>
-                            <p className='font-medium'>24.4</p>
+                            <p className='font-medium text-sm'>24.4</p>
                         </div>
                     </div>
                 </div>
@@ -415,11 +418,11 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                     <div className='flex gap-4'>
                         <div>
                             <p className='text-gray-150 text-xs mb-3.5'>UDM</p>
-                            <p className='font-medium'>6.3</p>
+                            <p className='font-medium text-sm'>6.3</p>
                         </div>
                         <div>
                             <p className='text-gray-150 text-xs mb-3.5'>Estimado</p>
-                            <p className='font-medium'>2.6</p>
+                            <p className='font-medium text-sm'>2.6</p>
                         </div>
                     </div>
                 </div>
@@ -427,7 +430,7 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                     <p className='font-medium mb-10'>
                         <span className='border-b border-gray-400 px-4'>Precio</span> <br/> Val. Contable
                     </p>
-                    <p className='font-medium'>11.6</p>
+                    <p className='font-medium text-sm'>11.6</p>
                 </div>
                 <div className='flex flex-col justify-between text-center h-full'>
                     <p className='font-medium mb-2'>
@@ -436,11 +439,11 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                     <div className='flex gap-4'>
                         <div>
                             <p className='text-gray-150 text-xs mb-3.5'>UDM</p>
-                            <p className='font-medium'>7.9</p>
+                            <p className='font-medium text-sm'>7.9</p>
                         </div>
                         <div>
                             <p className='text-gray-150 text-xs mb-3.5'>Estimado</p>
-                            <p className='font-medium'>0.0</p>
+                            <p className='font-medium text-sm'>0.0</p>
                         </div>
                     </div>
                 </div>
@@ -450,7 +453,7 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                     </p>
                     <div>
                         <p className='text-gray-150 text-xs mb-3.5'>Estimado</p>
-                        <p className='font-medium'>13.1</p>
+                        <p className='font-medium text-sm'>13.1</p>
                     </div>
                 </div>
                 <div className='flex flex-col justify-between text-center h-full'>
@@ -460,11 +463,11 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                     <div className='flex gap-4'>
                         <div>
                             <p className='text-gray-150 text-xs mb-3.5'>UDM</p>
-                            <p className='font-medium'>6.3</p>
+                            <p className='font-medium text-sm'>6.3</p>
                         </div>
                         <div>
                             <p className='text-gray-150 text-xs mb-3.5'>Estimado</p>
-                            <p className='font-medium'>2.6</p>
+                            <p className='font-medium text-sm'>2.6</p>
                         </div>
                     </div>
                 </div>
@@ -472,21 +475,22 @@ const IndicadoresAnalisisFundamental = ( ) =>{
                     <p className='font-medium mb-10'>
                         Val.contable <br/> por acción
                     </p>
-                    <p className='font-medium'>2.9</p>
+                    <p className='font-medium text-sm'>2.9</p>
                 </div>
                 <div className='flex flex-col justify-between text-center h-full'>
                     <p className='font-medium mb-16'>
                         ROE
                     </p>
-                    <p className='font-medium'>0.0</p>
+                    <p className='font-medium text-sm'>0.0</p>
                 </div>
                 <div className='flex flex-col justify-between text-center h-full'>
                     <p className='font-medium mb-16'>
                         ROA
                     </p>
-                    <p className='font-medium'>6.3</p>
+                    <p className='font-medium text-sm'>6.3</p>
                 </div>
                 </div>
+                </section>
 
                 <div className='text-sm border-b border-gray-400 mb-7'>
                     <button 
@@ -514,7 +518,7 @@ const IndicadoresAnalisisFundamental = ( ) =>{
             <VerReporteFlujoEfectivoCompleto 
                 state={state}
             />
-            </section>
+            
         </React.Fragment>
     );
 }

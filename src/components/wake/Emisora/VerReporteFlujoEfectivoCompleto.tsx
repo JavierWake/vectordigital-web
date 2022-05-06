@@ -137,7 +137,7 @@ const VerReporteFlujoEfectivoCompleto = ({ state }) => {
 
   return (
     <section>
-        <div className='w-full flex justify-between border-b border-gray-300 mb-7'>
+        <div className='w-full flex justify-between border-b border-gray-300 my-12'>
             <h2 className='font-semibold text-xl mb-7 inline-block mr-11'>{data.title}</h2>
             <button
                 onClick={()=> setOpen( !open )}
